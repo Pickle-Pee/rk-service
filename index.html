@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="stylesheet" href="/stylesheet/glider.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
-    <header>
+  <header>
     <nav class="navbar navbar-expand-lg container">
         <a class="navbar-brand" href="#">
             <img src="img/logo.png" alt="">
         </a>      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse header_nav" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
               <a class="nav-link" href="#">О нас</a>
@@ -22,7 +24,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Объекты</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-istem">
               <a class="nav-link" href="#">Новости</a>
             </li>
             <li class="nav-item">
@@ -31,7 +33,6 @@
           </ul>
         </div>
       </nav>
-    </header>
     <div class="preview-info">
       <div class="container content">
           <div class="preview-info-description">
@@ -39,13 +40,280 @@
                   Строгое соблюдение требований ГОСТ
               </p>
               <span>
-                  РК-Сервис - сервисный оператор Госкорпорации
+                  <strong> РК-Сервис</strong> - сервисный оператор Госкорпорации
+                  <span class="rkosmos">
+                    <img src="/img/rk_mini_logo.svg" alt="">
+                    Роскосмос
+                  </span>
               </span>
+              <div class="preview_more_info">
+                Узнать больше  &#8744;	
+              </div>
           </div>
           <div class="preview-info-image">
               <img src="/img/img1.png" alt="">
           </div>
         </div>
     </div>
+  </header>
+  <div class="main_content">
+    <div class="two_blocks_contents container">
+      <div class="content_block">
+        <div class="head_description">
+        <span>
+          Обеспечение бесперебойного питания по всей России
+        </span>
+        <p>
+          В управлении 10 комбинатов питания, находящихся на территории заводов корпорации Рокосмос, 
+          расположенных в Москве, Московсой, Уральской, Красноярской области и Республики Башкортостан
+        </p>
+      </div>
+        <div class="content_image">
+          <img src="/img/emoji.png" alt="">
+        </div>
+      </div>
+      <div class="content_block">
+        <div class="head_description1">
+        <p>
+          На данный момент питанием обеспечены 
+          <strong>10 предприятий</strong>
+        </p>
+        <p>
+          В штате задействовано
+          <strong>более 200 сотрудников</strong>
+        </p>
+      </div>
+        <div class="content_image">
+          <img src="/img/emoji2.png" alt="">
+        </div>
+      </div> 
+      </div>
+    <div class="uslugi container">
+      <span class="uslugi_lable">
+        Мы предоставляем услуги
+      </span>
+      <div class="uslugi_items_content">
+        <div class="uslugi_items">
+          <div class="uslugi_item pitanie">
+            <img src="/img/pit.png" alt="">
+            <div class="uslugi_text">
+              <p>организация питания на заводах входящих в госкорпорацию Роскосмос</p>
+            </div>
+          </div>
+          <div class="uslugi_item explatation">
+            <img src="/img/explatation.png" alt="">
+            <div class="uslugi_text">
+              <p>эксплуатации зданий и сооружений</p>
+            </div>
+          </div>
+          <div class="uslugi_item montazh">
+            <img src="/img/montazh.png" alt="">
+            <div class="uslugi_text">
+              <p>Строительно-монтажные работы</p>
+            </div>
+          </div>
+          <div class="uslugi_item cleening">
+            <img src="/img/cleening.png" alt="">
+            <div class="uslugi_text">
+              <p>Промышленный клининг</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="partners container">
+      <div class="partners_label">
+        <span>
+          Наши парнеры
+        </span>
+        <p>
+          Вы в надежных руках!
+        </p>
+        <!-- <div id="carousel-example-multi" 
+        class="carousel slide carousel-multi-item v-2 partners_slider" 
+        data-ride="carousel">
+
+
+          <div class="controls-top">
+            <a class="btn-floating" href="#carousel-example-multi" data-slide="prev"><i
+                class="fas fa-chevron-left"></i></a>
+            <a class="btn-floating" href="#carousel-example-multi" data-slide="next"><i
+                class="fas fa-chevron-right"></i></a>
+          </div>
+
+        
+          <div class="carousel-inner v-2" role="listbox">
+        
+            <div class="carousel-item active slider_item">
+                  <img class="card-img-top" src="/img/slide1.png" alt="Card image cap">
+            </div>
+            <div class="carousel-item">
+                  <img class="card-img-top" src="/img/slide2.png" alt="Card image cap">
+            </div>
+            <div class="carousel-item">
+                  <img class="card-img-top" src="/img/slide3.png" alt="Card image cap">
+            </div>
+            <div class="carousel-item">
+                  <img class="card-img-top" src="/img/slide4.png" alt="Card image cap">
+            </div>
+            <div class="carousel-item">
+                  <img class="card-img-top" src="/img/slide5.png" alt="Card image cap">
+                </div>
+            </div>        
+          </div> -->
+        <!-- <div class="partners_slider glider">
+          <div class="slider_item">
+            <img src="/img/slide1.png" alt="">
+          </div>
+          <div class="slider_item">
+            <img src="/img/slide2.png" alt="">
+          </div>
+          <div class="slider_item">
+            <img src="/img/slide3.png" alt="">
+          </div>
+          <div class="slider_item">
+            <img src="/img/slide4.png" alt="">
+          </div>
+          <div class="slider_item">
+            <img src="/img/slide5.png" alt="">
+          </div>
+        </div>
+        <button aria-label="Previous" class="glider-prev">«</button>
+        <button aria-label="Next" class="glider-next">»</button> -->
+        <div class="slider container">
+          <div class="slider__wrapper">
+            <div class="slider__item">
+                <img src="/img/slide1.png" alt="First slide">
+              </div>
+              <div class="slider__item">
+                <img src="/img/slide2.png" alt="Second slide">
+              </div>
+              <div class="slider__item">
+                <img src="/img/slide3.png" alt="Third slide">
+              </div>
+              <div class="slider__item">
+                <img src="/img/slide4.png" alt="Third slide">
+              </div>
+              <div class="slider__item">
+                <img src="/img/slide5.png" alt="Third slide">
+              </div>
+            </div>
+            <a class="slider__control slider__control_left slider__control_show" role="button">&#60;</a>
+          <a class="slider__control slider__control_right slider__control_show" role="button">&#62;	</a>
+          </div>
+      </div>
+    </div>
+    <div class="congratulations container">
+      <span>
+        Благодарности
+      </span>
+      <div class="slider container">
+        <div class="slider__wrapper">
+          <div class="slider__item">
+              <img src="/img/slide1.png" alt="First slide">
+            </div>
+            <div class="slider__item">
+              <img src="/img/slide2.png" alt="Second slide">
+            </div>
+            <div class="slider__item">
+              <img src="/img/slide3.png" alt="Third slide">
+            </div>
+            <div class="slider__item">
+              <img src="/img/slide4.png" alt="Third slide">
+            </div>
+            <div class="slider__item">
+              <img src="/img/slide5.png" alt="Third slide">
+            </div>
+          </div>
+          <a class="slider__control slider__control_left slider__control_show" role="button"></a>
+        <a class="slider__control slider__control_right slider__control_show" role="button"></a>
+        </div>
+      </div>
+      <div class="news container">
+        <span class="news_main_label">
+          Новости
+        </span>
+        <div class="news_items">
+            <div class="news_item">
+              <img src="/img/news.png" alt="">
+              <div class="news_text">
+                <span class="news_label">News!</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Labore temporibus</p>
+              </div>
+              <div class="read_and_data">
+                <a href="#">Читать</a>
+                <span class="date">August 15, 2018</span>
+              </div>
+            </div>
+            <div class="news_item">
+              <img src="/img/news.png" alt="">
+              <div class="news_text">
+                <span class="news_label">News!</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Labore temporibus</p>
+              </div>
+              <div class="read_and_data">
+                <a href="#">Читать</a>
+                <span class="date">August 15, 2018</span>
+              </div>
+            </div>
+            <div class="news_item">
+              <img src="/img/news.png" alt="">
+              <div class="news_text">
+                <span class="news_label">News!</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Labore temporibus</p>
+              </div>
+              <div class="read_and_data">
+                <a href="#">Читать</a>
+                <span class="date">August 15, 2018</span>
+              </div>
+            </div>
+        </div>
+        <div class="more_news">
+          Показать еще...
+        </div>
+      </div>
+      <footer>
+        <div class="first_foot container-fluid">
+          <div class="container">
+            <img src="/img/logo.png" alt="">
+            <div class="contacts">
+              <div>
+                <p>По всем вопросам обращатсья по телефону:</p>
+                <span>+7 (903) 597-33-47</span>
+              </div>
+              <div>
+                <p>Адрес:</p>
+                <span>ул. Средняя Калитниковская дом 27</span>
+              </div>
+              <div>
+                <p>E-mail:</p>
+                <span>mail@rk-service.ru</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="map">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0906f2d37fb07fedb95464c4c5e98e4950639517f4d623770aea11b11ffa4661&amp;width=100%25&amp;height=641&amp;lang=ru_RU&amp;scroll=true"></script>
+        <div class="end_foot container">
+          <div class="end_foot_text">
+            <a href="#">О нас</a>
+            <a href="#">Объекты</a>
+            <a href="#">Новости</a>
+            <a href="#">Вакансии</a>
+          </div>
+          <div class="end_foot_contacts">
+            <span>mail@rk-service.ru</span>
+            <span>ул. Средняя Калитниковская дом 27</span>
+            <span>+7 (903) 597-33-47</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div> 
 </body>
+<script src="/scripts/script.js"></script>
+<!-- <script src="/scripts/glider.js"></script> -->
 </html>
