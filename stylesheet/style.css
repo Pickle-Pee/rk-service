@@ -6,6 +6,10 @@
     
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     color: black;
     font-family: 'PT';
@@ -16,6 +20,7 @@
     width: 80%;
     display: flex;
 }
+
 
 .navbar .navbar-nav {
     position: absolute;
@@ -29,9 +34,14 @@ header {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
 }
 
-.header_nav {
+.header_nav a {
     color: black;
     font-family: 'PT';
+}
+
+.header_nav a:hover {
+    font-weight: bold;
+    color: black;
 }
 
 .preview-info {
@@ -48,7 +58,7 @@ header {
 }
 
 .preview-info-image img {
-    height: 50vh;
+    height: 50%;
 }
 
 .preview_more_info {
@@ -62,13 +72,23 @@ header {
     justify-content: center;
     transition: .5s;
     cursor: pointer;
+    margin-top: 15px;
+}
+
+.preview-info-description a {
+    text-decoration: none !important;
 }
 
 .preview_more_info:hover {
-    background: linear-gradient(76.27deg, #820075 -146.94%, rgba(220, 223, 255, 0.9) 81.14%);
+    background: white;
     color: #282171;
     border: 1px solid #282171;
     transition: .5s;
+}
+
+.preview_more_info:hover>.arrow-bottom {
+    border-top: 2px solid #282171;
+    border-right: 2px solid #282171;
 }
 
 .content {
@@ -173,11 +193,22 @@ header {
     justify-content: center;
 }
 
+.uslugi_text {
+    position: absolute;
+    height: 140px;
+    width: 100%;
+    padding: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .uslugi_item {
+    position: relative;
     box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     width: auto;
-    height: 340px;
+    height: 350px;
     margin-right: 32px;
 }
 
@@ -193,7 +224,7 @@ header {
 
 .partners {
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -323,6 +354,7 @@ header {
     width: 150px;
     height: 40px;
     transition: .5s;
+    cursor: pointer;
 }
 
 .more_news:hover {
@@ -371,7 +403,10 @@ footer {
 .end_foot {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    align-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .end_foot_text,
@@ -407,63 +442,90 @@ footer {
 
 }
 
-
-
-
-
-
-
-/* slider */
-
-.slider {
-    position: relative;
-    overflow: hidden;
-    margin-top: 35px;
-  }
-
-  .slider__wrapper {
+.arrow {
+    width: 10px;
+    height: 10px;
     display: flex;
-    transition: transform 0.6s ease;
-  }
-
-  .slider__item {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-  }
-
-  .slider__control {
-    position: absolute;
-    top: 50%;
-    display: none;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    color: #000000;
-    text-align: center;
-    font-size: 35px;
-  }
+}
 
-  .slider__control_show {
+.arrow-bottom {
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    margin-top: -1px;
+    margin-left: 10px;
+    transform: rotate(135deg);
+}
+
+.arrow-left {
+    
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    margin-top: -1px;
+    margin-left: 10px;
+    transform: rotate(225deg);
+}
+
+.arrow-right {
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    margin-top: -1px;
+    margin-left: 10px;
+    transform: rotate(45deg);
+}
+
+.slider {
     display: flex;
-  }
+    justify-content: space-between;
+}
 
-  .slider__control:hover,
-  .slider__control:focus {
-    text-decoration: none;
-    outline: 0;
-    opacity: .9;
-  }
 
-  .slider__control_left {
-    left: 0;
-  }
-
-  .slider__control_right {
-    right: 0;
-  }
-
-  .slider__item>div {
-    line-height: 250px;
-    font-size: 100px;
+.carousel-item {
+    display: flex;
+    align-items: center !important;
+    width: auto;
+    height: auto;
+    padding: 50px 20px;
     text-align: center;
+    box-sizing: border-box;
+    cursor: grab;
+    position: relative;
+  }
+
+  .slider_item {
+    display: flex !important;
+    justify-content: center !important;
+    width: auto !important;
+    margin-right: 0px !important;
+    height: auto !important;
+  }
+
+  .slider_item img {
+      width: auto;
+      height: auto;
+  }
+
+  .slider_pos {
+    display: flex;
+    width: 80%;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .slider_block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .owl-stage {
+    transform: translate3d(0px, 0px, 0px);
+    transition: all 0s ease 0s;
+    display: flex;
+    align-items: center;
+  }
+
+  .owl-item {
+      width: auto !important;
   }
