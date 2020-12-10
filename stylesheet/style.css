@@ -210,6 +210,13 @@ header {
     width: auto;
     height: 350px;
     margin-right: 32px;
+    transition: .5s linear
+}
+
+.uslugi_item:hover {
+    transition: .5s;
+    transition-property: all;
+    transform: scale(1.05);
 }
 
 .uslugi_item:nth-child(1) {
