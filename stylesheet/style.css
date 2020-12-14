@@ -34,6 +34,11 @@ header {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
 }
 
+.header_nav {
+    display: flex;
+    align-items: center;
+}
+
 .header_nav a {
     color: black;
     font-family: 'PT';
@@ -279,6 +284,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
     font-size: 14px;
 }
 
@@ -304,6 +310,7 @@ header {
     justify-content: center;
     align-items: center;
     align-content: center;
+    flex-wrap: wrap;
 }
 
 .news_item {
@@ -312,6 +319,8 @@ header {
     margin-left: 20px;
     width: 33.33%;
     text-align: left;
+    width: 30%;
+    margin: 10px;
 }
 
 .news_text {
@@ -343,10 +352,6 @@ header {
 
 .news_item img {
     width: 100%;
-}
-
-.news_item:nth-child(1) {
-    margin-left: -20px;
 }
 
 .more_news {
@@ -535,4 +540,52 @@ footer {
 
   .owl-item {
       width: auto !important;
+  }
+
+  .page-link {
+    border: none !important;
+  }
+
+  .rukovodstvo {
+      text-align: center;
+  }
+
+  .item_description {
+    margin-top: 25px;
+    text-align: left;
+  }
+
+  .button_prev {
+      display: flex;
+      align-items: center;
+      text-align: left;
+  }
+
+  .button_prev a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+  }
+
+  .button_prev a:hover {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+  }
+
+  .item_description li {
+      list-style-type: none !important;
+  }
+
+  .item_description ul {
+      margin: 0;
+      padding: 0;
+  }
+
+  .blok_razdel {
+
+  }
+
+  .blok_razdel span {
+      font-size: 24px;
   }
