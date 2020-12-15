@@ -4,10 +4,23 @@ $(document).ready(function(){
     loop: true,
     autoplay: true,
     autoplayTimeout: 3000,
+    responsive: {
+      900: {
+        items: 3
+      }
+    }
   });
 
   $('#js-carousel-2').owlCarousel({
-    items: 5
+    items: 5,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    responsive: {
+      900: {
+        items: 3
+      }
+    }
   });
 
   $('#js-carousel-1').each(function () {

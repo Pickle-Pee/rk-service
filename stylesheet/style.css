@@ -26,7 +26,7 @@ html {
     position: absolute;
     display: flex;
     justify-content: space-around;
-    width: 50%;
+    width: 30%;
 }
 
 .navbar-brand {
@@ -581,6 +581,8 @@ footer {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      border: none !important;
+      background: none !important;
   }
 
   .item_description {
@@ -589,46 +591,50 @@ footer {
     text-align: left;
   }
 
-  .button_prev {
-      display: flex;
-      align-items: center;
-      text-align: left;
-      justify-content: left;
-      font-size: 20px;
-      margin-left: -10px;
-  }
+.button_prev {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: left;
+    font-size: 20px;
+    margin-left: -10px;
+}
 
-  .button_prev a {
-      text-decoration: none;
-      color: black;
-      font-weight: bold;
-      padding-left: 5px;
-  }
+.button_prev a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding-left: 5px;
+}
 
-  .button_prev a:hover {
+.button_prev a:hover {
     font-weight: bold;
     color: black;
     text-decoration: none;
-  }
+}
 
-  .item_description li {
-      list-style-type: none !important;
-  }
+.item_description li {
+    list-style-type: none !important;
+}
 
-  .item_description ul {
-      margin: 0;
-      padding: 0;
-  }
+.item_description ul {
+    margin: 0;
+    padding: 0;
+}
 
-  .blok_razdel span {
-      font-size: 24px;
-  }
+.blok_razdel span {
+    font-size: 24px;
+}
 
-  .logo_right {
-      margin-right: 80px;
-  }
+.logo_right {
+    margin-right: 80px;
+}
 
-  .section_single_item {
+.logo_right img {
+    width: 80%;
+}
+
+.section_single_item {
     margin-top: 100px;
     margin-bottom: 100px;
     text-align: center;
@@ -636,19 +642,130 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     font-size: 14px;
-  }
+}
 
-  .section_single_item span {
-      font-size: 24px;
-      font-weight: bold;
-      margin-top: 15px;
-  }
+.section_single_item span {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 15px;
+}
   
-  .section_single_item img {
-      width: 100%;
-  }
+.section_single_item img {
+    width: 100%;
+}
 
-  .rk {
+.rk {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+.rk_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.rk_item {
+    margin-left: 20px;
+    width: 20%;
+    margin: 20px;
+}
+
+.rk_item span {
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.foot_logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Adaptiv */
+
+@media screen and (max-width: 900px) {
+    html {
       display: flex;
       flex-direction: column;
+
+    }
+
+    .preview-info-image img {
+        width: 100%;
+        margin-bottom: 55px;
+    }
+
+    .uslugi_items {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .uslugi_item {
+        margin-bottom: 25px;
+    }
+
+    .uslugi_item:nth-child(1) {
+        margin-left: 0;
+    }
+
+    .logo_right {
+        display: none;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-around;
+        width: 50% !important;
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 40px;
+    }
+
+    .navbar-brand {
+        margin-left: 0;
+    }
+
+    .collapse:not(.show) {
+        display: flex !important;
+    }
+
+    .header_nav {
+        display: flex;
+        align-items: center;
+        margin: 0 50px;
+        flex-basis: 0 !important;
+    }
+
+    .preview-info .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 55px;
+    }
+
+    .preview-info .preview-info-description p {
+        display: none;
+    }
+
+    .preview-info-description {
+        text-align: center;
+        margin-bottom: 55px;
+        width: 100%;
+    }
+
+    .contacts p {
+        line-height: initial;
+    }
+
+    .first_foot {
+        display: flex;
+    }
   }
