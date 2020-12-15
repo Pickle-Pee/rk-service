@@ -1,10 +1,9 @@
 $(document).ready(function(){
   $('#js-carousel-1').owlCarousel({
     items: 5,
-    loor: true,
+    loop: true,
     autoplay: true,
-    autoplayTimeout: 1500,
-    nav: true
+    autoplayTimeout: 3000,
   });
 
   $('#js-carousel-2').owlCarousel({

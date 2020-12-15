@@ -12,7 +12,7 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg container">
+    <nav class="navbar navbar-expand-lg container-fluid">
         <a class="navbar-brand" href="index.html">
             <img src="img/logo.png" alt="">
         </a>      
@@ -33,14 +33,14 @@
             <li class="nav-item">
                 <a class="nav-link" href="#">Вакансии</a>
               </li>
-              <li class="nav-item">
-                <img src="img/logo_right.png" alt="">
-              </li>
           </ul>
+        </div>
+        <div class="logo_right">
+          <img src="img/logo_right.png" alt="">
         </div>
       </nav>
     <div class="preview-info">
-      <div class="container content">
+      <div class="container-fluid content">
           <div class="preview-info-description">
               <p>
                   Строгое соблюдение требований ГОСТ
@@ -48,18 +48,9 @@
               <span>
                   <strong> РК-Сервис</strong> - сервисный оператор Госкорпорации
                   <span class="rkosmos">
-                    <img src="/img/rk_mini_logo.svg" alt="">
                     Роскосмос
                   </span>
               </span>
-              <a href="#anchor">
-              <div class="preview_more_info">
-                Узнать больше
-                <div class="arrow arrow-bottom">
-                </div>
-              	
-              </div>
-            </a>
           </div>
           <div class="preview-info-image">
               <img src="/img/img1.png" alt="">
@@ -67,7 +58,7 @@
         </div>
     </div>
   </header>
-  <div class="main_content" id="anchor">
+  <div class="main_content">
     <div class="two_blocks_contents container">
       <div class="content_block">
         <div class="head_description">
@@ -151,7 +142,7 @@
       </div>
       <div class="sliber_block">
       <!-- <div class="arrow arrow-left"></div> -->
-      <div id="js-carousel-1" class="owl-carousel slider_pos">
+      <div id="js-carousel-1" class="owl-carousel slider_pos container">
         <div class="carousel-item slider_item">
           <img src="/img/slide1.png" alt="">
         </div>
@@ -166,6 +157,15 @@
         </div>
         <div class="carousel-item slider_item">
           <img src="img/slide5.png" alt="">
+        </div>
+        <div class="carousel-item slider_item">
+          <img src="img/slide6.png" alt="">
+        </div>
+        <div class="carousel-item slider_item">
+          <img src="img/slide7.png" alt="">
+        </div>
+        <div class="carousel-item slider_item">
+          <img src="img/slide8.png" alt="">
         </div>
       </div>
       <!-- <div class="arrow arrow-right"></div> -->
@@ -237,9 +237,11 @@
               </div>
             </div>
         </div>
+        <a href="news.html">
         <div class="more_news">
-          <a href="news.html">Показать еще...</a>
+          Показать еще...
         </div>
+        </a>
       </div>
       <footer>
         <div class="first_foot container-fluid">
@@ -263,19 +265,6 @@
         </div>
         <div class="map">
           <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0906f2d37fb07fedb95464c4c5e98e4950639517f4d623770aea11b11ffa4661&amp;width=100%25&amp;height=641&amp;lang=ru_RU&amp;scroll=true"></script>
-        <div class="end_foot container">
-          <div class="end_foot_text">
-            <a href="#">О нас</a>
-            <a href="#">Объекты</a>
-            <a href="#">Новости</a>
-            <a href="#">Вакансии</a>
-          </div>
-          <div class="end_foot_contacts">
-            <span>mail@rk-service.ru</span>
-            <span>ул. Средняя Калитниковская дом 27</span>
-            <span>+7 (903) 597-33-47</span>
-          </div>
-        </div>
       </footer>
     </div>
   </div> 

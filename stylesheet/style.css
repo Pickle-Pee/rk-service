@@ -27,7 +27,10 @@ html {
     display: flex;
     justify-content: space-around;
     width: 50%;
-    margin-left: 30%;
+}
+
+.navbar-brand {
+    margin-left: 120px;
 }
 
 header {
@@ -37,6 +40,7 @@ header {
 .header_nav {
     display: flex;
     align-items: center;
+    margin: 0 50px;
 }
 
 .header_nav a {
@@ -52,7 +56,7 @@ header {
 .preview-info {
     display: flex;
     align-items: center;
-    background: linear-gradient(76.27deg, #820075 -146.94%, rgba(220, 223, 255, 0.9) 81.14%);
+    background: linear-gradient(75.32deg, #81C1E4 -120.94%, #DCECFF 80.84%);    
     width: 100%;
     min-height: 700px;
 }
@@ -60,6 +64,7 @@ header {
 .preview-info .content {
     display: flex;
     align-items: center;
+    margin: 0 120px;
 }
 
 .preview-info-image img {
@@ -117,7 +122,7 @@ header {
 }
 
 .rkosmos {
-    color: gray;
+    color: black;
     font-size: 40px;
     font-weight: 700;
     padding: 0;
@@ -282,14 +287,38 @@ header {
     margin-bottom: 100px;
     text-align: center;
     display: flex;
-    flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     font-size: 14px;
+    flex-direction: column;
 }
 
 .news_main_label {
-    padding-bottom: 35px;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.news_main_label_single {
+    width: 100%;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.news_main_label_single_rk {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.news_main_label_single span {
+    width: 100%;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .news span {
@@ -548,10 +577,15 @@ footer {
 
   .rukovodstvo {
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
   }
 
   .item_description {
     margin-top: 25px;
+    font-size: 14px;
     text-align: left;
   }
 
@@ -559,12 +593,16 @@ footer {
       display: flex;
       align-items: center;
       text-align: left;
+      justify-content: left;
+      font-size: 20px;
+      margin-left: -10px;
   }
 
   .button_prev a {
       text-decoration: none;
       color: black;
       font-weight: bold;
+      padding-left: 5px;
   }
 
   .button_prev a:hover {
@@ -582,10 +620,35 @@ footer {
       padding: 0;
   }
 
-  .blok_razdel {
-
-  }
-
   .blok_razdel span {
       font-size: 24px;
+  }
+
+  .logo_right {
+      margin-right: 80px;
+  }
+
+  .section_single_item {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 14px;
+  }
+
+  .section_single_item span {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 15px;
+  }
+  
+  .section_single_item img {
+      width: 100%;
+  }
+
+  .rk {
+      display: flex;
+      flex-direction: column;
   }
