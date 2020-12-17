@@ -5,6 +5,9 @@ $(document).ready(function(){
     responsive: {
       900: {
         items: 3
+      },
+      375: {
+        items: 2
       }
     }
   });
@@ -14,6 +17,9 @@ $(document).ready(function(){
     loop: true,
     responsive: {
       900: {
+        items: 3
+      },
+      375: {
         items: 3
       }
     }
