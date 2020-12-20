@@ -718,7 +718,7 @@ footer {
     font-weight: bold;
 }
 
-.dropdown {
+.dropdown_mob {
     display: none;
     left: 50px;
 }
@@ -729,6 +729,24 @@ footer {
 
 .header_nav {
     display: none;
+}
+
+.btn {
+    border: none !important;
+    background-color: #fff !important;
+    color: black !important;
+}
+
+.btn:hover {
+    font-weight: bold;
+}
+
+.btn:active,
+.btn:enabled,
+.btn:focus,
+.btn:any-link {
+    border: none !important;
+    box-shadow: none !important;
 }
 
 /* Burger Menu */
@@ -1078,7 +1096,7 @@ footer {
     }
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 420px) {
     html {
         display: flex !important;
         flex-direction: column !important;
@@ -1228,7 +1246,7 @@ footer {
         margin: 0;
     }
 
-    .dropdown {
+    .dropdown_mob {
         display: block;
     }
 
