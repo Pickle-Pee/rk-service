@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/logo_right.png" type="image/x-icon">
     <link rel="stylesheet" href="stylesheet/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"></script>    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"></script>    
+    <title>РК-Сервис</title>
 </head>
 <body>
   <header>
@@ -17,6 +20,21 @@
             <img src="img/logo.png" alt="">
         </a>      
         <div class="collapse navbar-collapse header_nav" id="navbarSupportedContent">
+            <div class="icon nav-icon-5 burger-body dropdown" type="button" id="dropdownMenu1" 
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <a class="nav-link dropdown-item" href="#uslugi">Услуги</a>
+              <a class="nav-link dropdown-item" href="#partners">Партнеры</a>
+              <a class="nav-link dropdown-item" href="rukovodstvo.html">Руководство</a>
+              <a class="nav-link dropdown-item" href="#news">Новости</a>
+              <a class="nav-link dropdown-item" href="#">Вакансии</a>
+            </div>
+          </div>
+          <div class="navbar navbar_nav">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
               <a class="nav-link" href="#uslugi">Услуги</a>
@@ -53,7 +71,7 @@
   <div class="main_content">
     <div class="uslugi container" id="uslugi">
       <span class="uslugi_lable">
-        Мы предоставляем услуги
+        Наши компетенции
       </span>
       <div class="uslugi_items_content">
         <div class="uslugi_items">
@@ -61,7 +79,7 @@
             <a href="pitanie.html">
             <img src="/img/pit.png" alt="">
             <div class="uslugi_text">
-              <p>организация питания на заводах входящих в госкорпорацию Роскосмос</p>
+              <p>Организация питания на заводах входящих в госкорпорацию Роскосмос</p>
             </div>
           </a>
           </div>
@@ -69,7 +87,7 @@
             <a href="explatation.html">
             <img src="/img/explatation.png" alt="">
             <div class="uslugi_text">
-              <p>эксплуатации зданий и сооружений</p>
+              <p>Эксплуатации зданий и сооружений</p>
             </div>
           </a>
           </div>
@@ -97,63 +115,52 @@
         <span>
           Наши парнеры
         </span>
-        <p>
-          Вы в надежных руках!
-        </p>
       </div>
       <div class="sliber_block">
-      <!-- <div class="arrow arrow-left"></div> -->
-      <div id="js-carousel-1" class="owl-carousel slider_pos container">
-        <div class="carousel-item slider_item">
-          <img src="/img/slide1.png" alt="">
-        </div>
-        <div class="carousel-item slider_item">
-          <img src="img/slide2.png" alt="">
-        </div>
-        <div class="carousel-item slider_item">
-          <img src="img/slide3.png" alt="">
-        </div>
-        <div class="carousel-item slider_item">
-          <img src="img/slide4.png" alt="">
-        </div>
-        <div class="carousel-item slider_item">
-          <img src="img/slide5.png" alt="">
-        </div>
-        <div class="carousel-item slider_item">
-          <img src="img/slide6.png" alt="">
-        </div>
-        <div class="carousel-item slider_item">
-          <img src="img/slide7.png" alt="">
-        </div>
-        <div class="carousel-item slider_item">
-          <img src="img/slide8.png" alt="">
-        </div>
-      </div>
-      <!-- <div class="arrow arrow-right"></div> -->
-    </div>
+        <div class="ant-carousel">
+          <div class="ant-carousel-hider">
+            <ul class="ant-carousel-list">
+              <li class="ant-carousel-element"><img src="/img/slide1.png" alt="0">
+              </li>
+              <li class="ant-carousel-element"><img src="/img/slide2.png" alt="1">
+              </li>
+              <li class="ant-carousel-element"><img src="/img/slide3.png" alt="2">
+              </li>
+              <li class="ant-carousel-element"><img src="/img/slide4.png" alt="3">
+              </li>
+              <li class="ant-carousel-element"><img src="/img/slide5.png" alt="4">
+              </li>
+              <li class="ant-carousel-element"><img src="/img/slide6.png" alt="5">
+              </li>
+              <li class="ant-carousel-element"><img src="/img/slide7.png" alt="6">
+              </li>
+              <li class="ant-carousel-element"><img src="/img/slide8.png" alt="7">
+              </li>
+            </ul>
+          </div>
+          <div class="ant-carousel-arrow-left"></div>
+          <div class="ant-carousel-arrow-right"></div>
+        </div>    </div>
     </div>
     <div class="congratulations container" id="congratulations">
       <span>
-        Благодарности
+        Отзывы о нашей работе
       </span>
-      <div id="js-carousel-2" class="owl-carousel">
-
-        <div class="carousel-item slider_item">
-          <img src="/img/gramota.png" alt="">
+      <div class="ant-carousel1">
+        <div class="ant-carousel-hider1">
+          <ul class="ant-carousel-list1">
+            <li class="ant-carousel-element1"><img src="/img/Благодарность_ЗлатМаш.jpg" alt="0">
+            </li>
+            <li class="ant-carousel-element1"><img src="/img/Благодарность_КРАСМАШ.jpg" alt="1">
+            </li>
+            <li class="ant-carousel-element1"><img src="/img/Благодарность_РК-Сервис.jpg" alt="2">
+            </li>
+            <li class="ant-carousel-element1"><img src="/img/Благодарность_ЦНИИмаш.jpg" alt="3">
+            </li>
+          </ul>
         </div>
-        <div class="carousel-item slider_item">
-          <img src="img/gramota.png" alt="">
-        </div>
-        <div class="carousel-item slider_item">
-          <img src="img/gramota.png" alt="">
-        </div>
-        <div class="carousel-item slider_item">
-          <img src="img/gramota.png" alt="">
-        </div>
-        <div class="carousel-item slider_item">
-          <img src="img/gramota.png" alt="">
-        </div>
-      
+        <div class="ant-carousel-arrow-left1"></div>
+        <div class="ant-carousel-arrow-right1"></div>
       </div>
       </div>
       <div class="news container" id="news">
