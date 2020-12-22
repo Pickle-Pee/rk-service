@@ -664,8 +664,6 @@ footer {
 }
 
 .section_single_item {
-    margin-top: 100px;
-    margin-bottom: 100px;
     text-align: left;
     display: flex;
     align-items: center;
@@ -720,7 +718,7 @@ footer {
 
 .dropdown_mob {
     display: none;
-    left: 50px;
+    left: 70%;
 }
 
 .dropdown button {
@@ -1100,7 +1098,6 @@ footer {
     html {
         display: flex !important;
         flex-direction: column !important;
-        width: 375px !important;
     }
 
     .navbar .navbar-nav {
@@ -1167,7 +1164,6 @@ footer {
 
     .preview-info {
         min-height: 25vh !important;
-        width: 46vh;
     }
 
     .preview-info .preview-info-description p {
@@ -1194,7 +1190,7 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 70vh;
+        height: auto;
     }
 
     .foot_logo {
@@ -1253,7 +1249,7 @@ footer {
     .dropdown-menu {
         min-width: auto !important;
         top: 70% !important;
-        left: 205px !important;
+        left: 55% !important;
     }
 
     .ant-carousel-element1 {
@@ -1264,3 +1260,101 @@ footer {
         width: 250px;
     }
   }
+
+  @media (max-width: 1024px) {
+      .uslugi_items {
+          flex-wrap: wrap;
+      }
+
+      .uslugi_item {
+          margin-left: 0 !important;
+          margin-bottom: 32px;
+      }
+
+      .first_foot .container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      .foot_logo {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .contacts span {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .contacts div {
+        margin-bottom: 20px;
+    }
+
+    .contacts p {
+        margin-top: 20px;
+        padding-bottom: 8px;
+    }
+
+    .first_foot {
+        height: 100%;
+    }
+
+    .logo_right {
+        display: none;
+    }
+
+    .preview-info {
+        background-size: auto;
+        margin-top: -50px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .uslugi_items {
+        flex-wrap: wrap;
+    }
+
+    .uslugi_item {
+        margin-left: 0 !important;
+        margin-bottom: 32px;
+    }
+
+    .first_foot .container {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .foot_logo {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contacts span {
+      font-size: 20px;
+      font-weight: bold;
+  }
+
+  .contacts div {
+      margin-bottom: 20px;
+  }
+
+  .contacts p {
+      margin-top: 20px;
+      padding-bottom: 8px;
+  }
+
+  .first_foot {
+      height: 100%;
+  }
+
+  .logo_right {
+      display: none;
+  }
+
+  .preview-info {
+      background-size: auto;
+      margin-top: -50px;
+  }
+}
